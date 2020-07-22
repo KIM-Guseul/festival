@@ -99,6 +99,157 @@ header footer p {
 }
 
 /*====================main========================*/
+.rt {
+    position: absolute;
+    z-index:4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 4%;
+    top: 2%;
+    font-family: "humun", serif;
+
+}
+
+
+.menu-trigger {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.menu-trigger span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: #27a98f;
+    position: absolute;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.pop_up {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    transition: .5s;
+}
+
+.menu-trigger.active + .pop_up {
+    right: 0;
+}
+
+
+.pop_up_ {
+    margin: 100px 0 0 120px;
+}
+
+.pop_up_ .pop_up_title {
+    display: inline-block;
+    font-size: 40px;
+    color: #e55358;
+    margin-bottom: 15px;
+}
+
+.pop_up_ span {
+    display: flex;
+}
+
+.pop_up_ span a {
+    font-size: 30px;
+    color: #fff;
+    padding: 0 40px;
+}
+
+.pop_up_ span a:hover {
+    color: #27a98f;
+}
+aside .menu-trigger {
+    width: 36px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+    z-index: 1;
+    /*transform: translateY(-50%);*/
+}
+
+aside .menu-trigger span {
+    width: 100%;
+    border-radius: 10px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    transition: .5s;
+    background: #27a98f;
+
+}
+
+aside .menu-trigger span:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+aside .menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+aside .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+}
+
+
+aside .menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(45deg);
+
+}
+
+
+aside .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+
+aside .menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
 main {
     float: right !important;
 }
@@ -242,136 +393,6 @@ aside .ticket .top a {
     left: -12px;
 }
 
-aside nav {
-    height: 30px;
-    position: absolute;
-    right: 5%;
-    top: 20px;
-    color: #27a98f;
-    width: 60%;
-    z-index: 3;
-}
-
-aside nav .pop_up.active {
-    visibility: visible;
-    z-index: -1;
-}
-aside {
-    width: 100%;
-}
-
-aside nav .pop_up {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #12252d;
-    z-index: 6;
-    text-align: center;
-    font-family: "humun", serif;
-    font-size: 30px;
-    opacity: .9;
-    visibility: hidden;
-
-}
-
-aside nav .pop_up .pop_up_1 {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-aside nav .pop_up .pop_up_1 .pop_up_title {
-    padding: 20px;
-    font-size: 40px;
-    color: #fff;
-
-}
-
-aside nav .pop_up .pop_up_2 .pop_up_title {
-    padding: 20px;
-    font-size: 40px;
-    color: #fff;
-
-}
-
-aside nav .pop_up .pop_up_3 .pop_up_title {
-    padding: 20px;
-    font-size: 40px;
-    color: #fff;
-
-}
-
-aside nav .pop_up .pop_up_4 .pop_up_title {
-    padding: 20px;
-    font-size: 40px;
-    color: #fff;
-
-}
-
-aside nav .pop_up .pop_up_1 a {
-    display: block;
-    color: #27a98f;
-}
-
-aside nav .pop_up .pop_up_2 a {
-    display: block;
-    color: #27a98f;
-}
-
-aside nav .pop_up .pop_up_3 a {
-    display: block;
-    color: #27a98f;
-}
-
-aside nav .pop_up .pop_up_4 a {
-    display: block;
-    color: #27a98f;
-}
-
-aside nav .pop_up .pop_up_1 a:hover {
-    color: #fff;
-}
-
-aside nav .pop_up .pop_up_2 a:hover {
-    color: #fff;
-}
-
-aside nav .pop_up .pop_up_3 a:hover {
-    color: #fff;
-}
-
-aside nav .pop_up .pop_up_4 a:hover {
-    color: #fff;
-}
-
-aside nav .pop_up .pop_up_2 {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 25%;
-
-}
-
-aside nav .pop_up .pop_up_3 {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-
-aside nav .pop_up .pop_up_4 {
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 75%;
-}
 aside select {
     background: none;
     border: none;
@@ -387,62 +408,6 @@ aside select {
 
 aside select option {
     color: #27a98f;
-}
-
-
-
-aside .menu-trigger {
-    width: 36px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 0;
-    z-index: 1;
-    /*transform: translateY(-50%);*/
-}
-
-aside .menu-trigger span {
-    width: 100%;
-    border-radius: 10px;
-    height: 6px;
-    background: #000;
-    position: absolute;
-    transition: .5s;
-    background: #27a98f;
-
-}
-
-aside .menu-trigger span:nth-of-type(1) {
-    top: 0;
-    left: 0;
-}
-
-aside .menu-trigger span:nth-of-type(2) {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-aside .menu-trigger span:nth-of-type(3) {
-    bottom: 0;
-    left: 0;
-}
-
-
-aside .menu-trigger.active span:nth-of-type(1) {
-    transform: translateY(12px) rotate(45deg);
-
-}
-
-
-aside .menu-trigger.active span:nth-of-type(2) {
-    opacity: 0;
-}
-
-
-aside .menu-trigger.active span:nth-of-type(3) {
-    transform: translateY(-12px) rotate(-45deg);
 }
 
 main .page {
@@ -613,6 +578,60 @@ main .page .main_contents ul li .send{
     header footer {
         display: none;
     }
+    .rt{
+        z-index: 15;
+    }
+    .menu-trigger {
+/*        transform: translate(30px, -82px);*/
+        z-index: 15;
+    }
+
+    .popup {
+        display: none;
+    }
+
+    .pop_top {
+        right: 15px;
+        bottom: 3%;
+    }
+
+    .pop_up {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+        transition: .5s;
+    }
+
+    .pop_up_ {
+        margin: 50px 0 0 60px;
+        transform: translateY(100%);
+    }
+
+    .pop_up_ .pop_up_title {
+        display: inline-block;
+        font-size: 35px;
+        color: #e55358;
+        margin-bottom: 15px;
+    }
+
+    .pop_up_ span {
+        display: flex;
+    }
+
+    .pop_up_ span a {
+        font-size: 25px;
+        color: #fff;
+        padding: 0 20px;
+    }
+
+    .pop_up_ span a:hover {
+        color: #27a98f;
+    }
+
 
     aside {
         width: 100%;
@@ -635,15 +654,7 @@ main .page .main_contents ul li .send{
         position: absolute;
         top: 260%;
         left: 90%;
-    }
 
-    aside nav {
-        width: 100%;
-        position: fixed;
-        right: 10px;
-        top: 50px;
-        color: #27a98f;
-        z-index: 3;
     }
 
     aside .menu-trigger {
@@ -669,45 +680,15 @@ main .page .main_contents ul li .send{
         color: #27a98f;
     }
 
-    aside nav .pop_up {
-        width: 100%;
-        height: 400px;
-        position: absolute;
-        top: -2.2%;
-        right: -1.4%;
-        background: #12252d;
-        z-index: 5;
-        text-align: center;
-        font-family: "humun", serif;
-        font-size: 30px;
-        opacity: .9;
-        visibility: hidden;
-
-    }
-
-    aside nav .pop_up .pop_up_1 .pop_up_title {
-        margin-top: 25px;
-    }
-
-    aside nav .pop_up .pop_up_2 .pop_up_title {
-        margin-top: 25px;
-    }
-
-    aside nav .pop_up .pop_up_3 .pop_up_title {
-        margin-top: 25px;
-    }
-
-    aside nav .pop_up .pop_up_4 .pop_up_title {
-        margin-top: 25px;
-    }
-
     main .page {
         padding: 50px 24px;
+
     }
 
     main .page .main_title {
-        margin: 50px 0; 
+        margin: 50px 0;
     }
+
     main .page .main_title .site_map > .site_map_2 .menu_title {
         z-index: 8;
     }

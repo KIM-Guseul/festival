@@ -83,8 +83,7 @@
                     <a href="https://ko-kr.facebook.com/makfestival/" target="_blank">
                         <img src="img/sns_facebook.png">
                     </a>
-                    <a href="https://twitter.com/hashtag/%EB%A7%89%EA%B1%B8%EB%A6%AC%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C" target="_blank"
->
+                    <a href="https://twitter.com/hashtag/%EB%A7%89%EA%B1%B8%EB%A6%AC%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C" target="_blank">
                         <img src="img/sns_twitter.png">
                     </a>
                     <a href="https://www.instagram.com/accounts/login/?next=/p/Bn-kGaknWIF/" target="_blank">
@@ -98,41 +97,45 @@
                     </a>
                 </div>
             </div>
-            <nav>
-                <div class="menu-trigger">
+            <div class="rt">
+                <a class="menu-trigger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                    <div class="pop_up">
-                        <div class="pop_up_1">
-                            <a href="sub1-1.html" class="pop_up_title">축제소개</a>
-                            <a href="sub1-1.html">축제소개</a>
+                </a>
+
+                <div class="pop_up">
+                    <div class="pop_up_">
+                        <a href="sub1-1.html" class="pop_up_title">축제소개</a>
+                        <span><a href="sub1-1.html">축제소개</a>
                             <a href="sub1-2.html">인사말</a>
                             <a href="sub1-3.html">오시는 길</a>
-                        </div>
-                        <div class="pop_up_2">
-                            <a href="sub2-1.html" class="pop_up_title">프로그램안내</a>
-                            <a href="sub2-1.html">행사 일정</a>
+                        </span>
+                    </div>
+                    <div class="pop_up_">
+                        <a href="sub2-1.html" class="pop_up_title">프로그램안내</a>
+                        <span><a href="sub2-1.html">행사 일정</a>
                             <a href="sub2-2.html">참여 이벤트 안내</a>
                             <a href="sub2-3.html">참여 업체</a>
-                        </div>
-                        <div class="pop_up_3">
-                            <a href="sub3-1.html" class="pop_up_title">티켓예매</a>
-                            <a href="sub3-1.html">티켓예매</a>
+                        </span>
+                    </div>
+                    <div class="pop_up_">
+                        <a href="sub3-1.html" class="pop_up_title">티켓예매</a>
+                        <span><a href="sub3-1.html">티켓예매</a>
                             <a href="sub3-2.html">이벤트 참가신청</a>
-                        </div>
-                        <div class="pop_up_4">
-                            <a href="sub4-1.html" class="pop_up_title">커뮤니티</a>
-                            <a href="sub4-1.html">Q & A</a>
+                        </span>
+                    </div>
+                    <div class="pop_up_">
+                        <a href="sub4-1.html" class="pop_up_title">커뮤니티</a>
+                        <span><a href="sub4-1.html">Q & A</a>
                             <a href="sub4-2.html">공지사항</a>
                             <a href="sub4-3.html">지난축제보기</a>
-                        </div>
+                        </span>
                     </div>
-                
+                </div>
 
 
-            </nav>
+            </div>
             <select>
                 <option>KOR</option>
                 <option>ENG</option>
@@ -196,15 +199,15 @@
         var minus = document.getElementById('minus')
         var quantity = document.getElementById('quantity');
         plus.addEventListener('click', function() {
-            if(k<9){
+            if (k < 9) {
                 k += 1;
                 quantity.textContent = k;
             }
         });
-        
-        minus.addEventListener('click',function(){
+
+        minus.addEventListener('click', function() {
             k -= 1;
-            if(k <= 0){
+            if (k <= 0) {
                 k = 0;
             }
             quantity.textContent = k;
