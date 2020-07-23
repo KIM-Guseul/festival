@@ -28,17 +28,17 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
-    font-size: 40px;
+    font-size: 3vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 10px 0;
+    padding: 0.5vw 0;
     border-radius: 10px;
     background-color: #27a98f;
     color: white;
@@ -47,8 +47,8 @@ header .header_title h2 {
 header .header_title ul {
     width: 60%;
     margin: 0 auto;
-    padding: 30px 0 90px 0;
-    font-size: 30px;
+    padding: 2vw 0;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
 
@@ -60,13 +60,6 @@ header .header_title ul li {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-}
-
-header .header_title ul li img {
-    margin-right: 20px;
-    width: 22px;
-    height: 75px;
-
 }
 
 header .header_title ul li a {
@@ -92,7 +85,7 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     white-space: pre-line;
     font-size: 8px;
     color: #27a98f;
@@ -107,7 +100,7 @@ header footer p {
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -331,11 +324,13 @@ aside .top {
     position: fixed;
     right: 5%;
     bottom: 5%;
+    
+    z-index: 3;
 }
 
 aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
@@ -348,7 +343,7 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
@@ -364,7 +359,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -440,7 +435,10 @@ main .page .main_contents {
 
 .main_contents {}
 
-.main_contents img {}
+.main_contents img {
+    width: 100%;
+    border: 1px solid #555;
+}
 
 .event_parti {
     width: 90%;
@@ -456,7 +454,7 @@ main .page .main_contents {
 .event_parti ul li > label {
     width: 100%;
     font-size: 25px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 .event_parti ul li > label:after {
@@ -469,7 +467,7 @@ main .page .main_contents {
 
 .event_parti ul li select {
     width: 100%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     padding: 10px 0 10px 10px;
@@ -502,7 +500,7 @@ main .page .main_contents {
 
 .num_p > label {
     font-size: 25px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     margin-bottom: 25px;
 }
 
@@ -525,7 +523,7 @@ main .page .main_contents {
 
 .quan a span {
     font-size: 28px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -537,7 +535,7 @@ main .page .main_contents {
 .btn button {
     margin: 0 auto;
     font-size: 28px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     color: #27a98f;
     border: 2px solid #27a98f;
     border-radius: 5px;
@@ -610,7 +608,7 @@ main .page .main_contents {
         position: fixed;
         right: -100%;
         top: 0;
-        width: 80%;
+        width: 90%;
         height: 100%;
         background: rgba(0, 0, 0, 0.9);
         z-index: -1;
@@ -618,13 +616,13 @@ main .page .main_contents {
     }
 
     .pop_up_ {
-        margin: 50px 0 0 60px;
-        transform: translateY(100%);
+        margin: 10vw 0 0 10vw;
+
     }
 
     .pop_up_ .pop_up_title {
         display: inline-block;
-        font-size: 35px;
+        font-size: 6vw;
         color: #e55358;
         margin-bottom: 15px;
     }
@@ -634,9 +632,9 @@ main .page .main_contents {
     }
 
     .pop_up_ span a {
-        font-size: 25px;
+        font-size: 4.5vw;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 4vw;
     }
 
     .pop_up_ span a:hover {
@@ -685,7 +683,7 @@ main .page .main_contents {
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;

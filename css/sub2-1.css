@@ -28,7 +28,7 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
@@ -92,7 +92,7 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     white-space: pre-line;
     font-size: 0.2vw;
     color: #27a98f;
@@ -107,7 +107,7 @@ header footer p {
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -199,6 +199,7 @@ header footer p {
 .pop_up_ span a:hover {
     color: #27a98f;
 }
+
 main {
     float: right !important;
 }
@@ -332,16 +333,18 @@ aside .top {
     position: fixed;
     right: 5%;
     bottom: 5%;
+    z-index: 3;
 }
 
 aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
     left: -12px;
 }
+
 aside select {
     background: none;
     border: none;
@@ -349,14 +352,16 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
 }
+
 aside select option {
     color: #27a98f;
 }
+
 main .page {
     height: 100%;
     padding: 100px 29.734% 14.867% 14.867%;
@@ -364,7 +369,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -453,7 +458,7 @@ main .page .main_contents {
     border-bottom: 2px solid #e55358;
 }
 
-.time-table tr th:nth-of-type(2){}
+.time-table tr th:nth-of-type(2) {}
 
 
 
@@ -465,6 +470,7 @@ main .page .main_contents {
 
 .time-table tr td:nth-of-type(2n) {
     font-size: 1.3vw;
+    padding: 15px 0 0 0;
     vertical-align: top;
 
 }
@@ -473,8 +479,10 @@ main .page .main_contents {
 /* ============== 768 =======================*/
 
 @media (max-width:768px) {
-    .col-md-9{width: 100%;}
-    
+    .col-md-9 {
+        width: 100%;
+    }
+
     header {
         background: #fff;
         height: 100%;
@@ -502,17 +510,19 @@ main .page .main_contents {
     }
 
     header .header_title {
-        display: none ;
+        display: none;
     }
 
     header footer {
         display: none;
     }
-    .rt{
+
+    .rt {
         z-index: 15;
     }
+
     .menu-trigger {
-/*        transform: translate(30px, -82px);*/
+        /*        transform: translate(30px, -82px);*/
         z-index: 15;
     }
 
@@ -538,7 +548,7 @@ main .page .main_contents {
 
     .pop_up_ {
         margin: 10vw 0 0 10vw;
- 
+
     }
 
     .pop_up_ .pop_up_title {
@@ -604,7 +614,7 @@ main .page .main_contents {
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;
@@ -622,6 +632,21 @@ main .page .main_contents {
     main .page .main_title .site_map > .site_map_2 .menu_title {
         z-index: 8;
     }
+    
+        .pop_up_ .pop_up_title {
+        font-size: 3.5vw;
+    }
+
+    .time-table tr th {
+        font-size: 4vw;
+    }
+    .time-table tr td{
+            font-size: 2.5vw;
+    }
+    .time-table tr td:nth-of-type(2n){
+            font-size: 2.5vw;
+
+    }
 
 
 }
@@ -629,7 +654,7 @@ main .page .main_contents {
 /* =================== 1092 ================================*/
 
 @media (min-width:769px) and (max-width:1092px) {
-    .ticket{
+    .ticket {
         transform: rotate(-90deg);
         transform-origin: 100% -2%;
         transition: .5s;
@@ -639,13 +664,24 @@ main .page .main_contents {
         top: 20%;
         right: 1%;
     }
-    
-   .ticket.active {
+
+    .ticket.active {
         transform: rotate(0);
     }
-    
+
     .pop_up_ .pop_up_title {
         font-size: 3.5vw;
     }
-    
+
+    .time-table tr th {
+        font-size: 1.7vw;
+    }
+    .time-table tr td{
+            font-size: 1.2vw;
+    }
+    .time-table tr td:nth-of-type(2n){
+            font-size: 1.4vw;
+
+    }
+
 }

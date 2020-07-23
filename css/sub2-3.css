@@ -28,7 +28,7 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
@@ -85,7 +85,7 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     font-size: 0.2vw;
     color: #27a98f;
 }
@@ -99,7 +99,7 @@ header footer p {
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -376,11 +376,12 @@ aside .top {
     position: fixed;
     right: 5%;
     bottom: 5%;
+    z-index: 3;
 }
 
 aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
@@ -396,7 +397,7 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
@@ -413,7 +414,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -531,7 +532,7 @@ main .page .main_contents ul li p {
     left: 0;
     text-align: center;
     color: #fff;
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     z-index: 2;
     font-size: 0.6vw;
 
@@ -697,7 +698,7 @@ main .page .main_contents .more a img {}
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;
@@ -738,7 +739,7 @@ main .page .main_contents .more a img {}
     left: 0;
     text-align: center;
     color: #fff;
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     z-index: 2;
     font-size: 0.6vw;
 

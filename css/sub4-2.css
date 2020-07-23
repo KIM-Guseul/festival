@@ -28,7 +28,7 @@ header .logo a {
 header .logo a img {}
 
 header .header_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 }
 
 header .header_title h2 {
@@ -85,7 +85,7 @@ header footer {
 }
 
 header footer p {
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
     font-size: 0.2vw;
     color: #27a98f;
 }
@@ -99,7 +99,7 @@ header footer p {
     align-items: flex-start;
     right: 70px;
     top: 20px;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
 
 }
 
@@ -375,11 +375,12 @@ aside .top {
     position: fixed;
     right: 5%;
     bottom: 5%;
+    z-index: 3;
 }
 
 aside .top a {
     position: absolute;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 25px;
     color: #fff;
     top: 10px;
@@ -392,7 +393,7 @@ aside select {
     position: absolute;
     top: 2.3%;
     right: 1%;
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     font-size: 1.5em;
     z-index: 1;
     color: #27a98f;
@@ -408,7 +409,7 @@ main .page {
 }
 
 main .page .main_title {
-    font-family: "humun", serif;
+    font-family: 'Sam M';
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -477,8 +478,8 @@ main .page .main_contents details{
     width: 100%;
 }
 main .page .main_contents details summary{ 
-    font-size: 24px;
-    font-family: "HCRDotum", serif;
+    font-size: 1.5vw;
+    font-family: 'NanumGothic';
     width: 100%;
     padding: 20px 0;
     border-bottom: 1px solid rgba(85,85,85,0.1);
@@ -526,7 +527,7 @@ main .page .main_contents details .con_1 .con_1_img img{
 main .page .main_contents {
     height: 100%;
     line-height: 1.8;
-    font-family: "HCRDotum", serif;
+    font-family: 'NanumGothic';
 }
 main .page .main_contents details .con_1 .con_1_img img:nth-of-type(1), 
 main .page .main_contents details .con_1 .con_1_img img:nth-of-type(3){
@@ -671,7 +672,7 @@ main .page .main_contents details .con_1 .con_1_img img:nth-of-type(2){
         position: fixed;
         top: 12px;
         right: 60px;
-        font-family: "humun", serif;
+        font-family: 'Sam M';
         font-size: 1.5em;
         z-index: 4;
         color: #27a98f;
