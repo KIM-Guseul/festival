@@ -32,13 +32,13 @@ header .header_title {
 }
 
 header .header_title h2 {
-    font-size: 40px;
+    font-size: 3vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 10px 0;
+    padding: 0.5vw 0;
     border-radius: 10px;
     background-color: #27a98f;
     color: white;
@@ -47,8 +47,8 @@ header .header_title h2 {
 header .header_title ul {
     width: 60%;
     margin: 0 auto;
-    padding: 30px 0 90px 0;
-    font-size: 30px;
+    padding: 2vw 0;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
 
@@ -94,7 +94,7 @@ header footer {
 header footer p {
     font-family: "HCRDotum", serif;
     white-space: pre-line;
-    font-size: 8px;
+    font-size: 0.2vw;
     color: #27a98f;
 }
 
@@ -174,7 +174,7 @@ header footer p {
 
 
 .pop_up_ {
-    margin: 100px 0 0 120px;
+    margin: 100px 0 0 7vw;
 }
 
 .pop_up_ .pop_up_title {
@@ -189,10 +189,12 @@ header footer p {
 }
 
 .pop_up_ span a {
-    font-size: 30px;
+    font-size: 2vw;
     color: #fff;
-    padding: 0 40px;
+    padding: 0 2.5vw;
 }
+
+
 
 .pop_up_ span a:hover {
     color: #27a98f;
@@ -204,6 +206,7 @@ main {
 aside .ticket {
     width: 160px;
     height: 250px;
+    transform-origin: 100% -2%;
     background: #e6e6e6;
     text-align: center;
     border-radius: 10px;
@@ -320,18 +323,18 @@ aside .ticket .sns a:hover {
 
 aside .ticket .sns a img {}
 
-aside .ticket .top {
+aside .top {
     width: 0;
     height: 0;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
     border-bottom: 40px solid #27a98f;
-    position: relative;
-    top: 150%;
-    left: 0;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
 }
 
-aside .ticket .top a {
+aside .top a {
     position: absolute;
     font-family: "humun", serif;
     font-size: 25px;
@@ -369,7 +372,7 @@ main .page .main_title {
 }
 
 main .page .main_title h1 {
-    font-size: 85px;
+    font-size: 6vw;
     color: #27a98f;
 
 }
@@ -377,7 +380,7 @@ main .page .main_title h1 {
 main .page .main_title .site_map {
     align-items: flex-end;
     color: #555;
-    font-size: 20px;
+    font-size: 1.2vw;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -423,7 +426,7 @@ main .page .main_title .site_map > .site_map_2:hover .menu_title {
 
 main .page .main_title .site_map .site_map_2 .menu_title a {
     display: block;
-    font-size: 14px;
+    font-size: 0.8vw;
     color: #555;
 }
 
@@ -445,20 +448,23 @@ main .page .main_contents {
 
 .time-table tr th {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5vw;
     padding: 30px 20px;
     border-bottom: 2px solid #e55358;
-
 }
+
+.time-table tr th:nth-of-type(2){}
+
+
 
 .time-table tr td {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1vw;
     padding: 15px 20px;
 }
 
 .time-table tr td:nth-of-type(2n) {
-    font-size: 1.5em;
+    font-size: 1.3vw;
     vertical-align: top;
 
 }
@@ -466,7 +472,9 @@ main .page .main_contents {
 
 /* ============== 768 =======================*/
 
-@media (max-width:767px) {
+@media (max-width:768px) {
+    .col-md-9{width: 100%;}
+    
     header {
         background: #fff;
         height: 100%;
@@ -494,7 +502,7 @@ main .page .main_contents {
     }
 
     header .header_title {
-        display: none;
+        display: none ;
     }
 
     header footer {
@@ -614,4 +622,30 @@ main .page .main_contents {
     main .page .main_title .site_map > .site_map_2 .menu_title {
         z-index: 8;
     }
+
+
+}
+
+/* =================== 1092 ================================*/
+
+@media (min-width:769px) and (max-width:1092px) {
+    .ticket{
+        transform: rotate(-90deg);
+        transform-origin: 100% -2%;
+        transition: .5s;
+
+        position: fixed;
+        z-index: 1;
+        top: 20%;
+        right: 1%;
+    }
+    
+   .ticket.active {
+        transform: rotate(0);
+    }
+    
+    .pop_up_ .pop_up_title {
+        font-size: 3.5vw;
+    }
+    
 }
